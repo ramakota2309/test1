@@ -1,2 +1,180 @@
-welcome
-soc lab week 
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test2 (master)
+$ cd ..
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~
+$ git clone https://github.com/ramakota2309/test1.git
+Cloning into 'test1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~
+$ ls
+'3D Objects'/                                                                                   Pictures/             Untitled22.ipynb   Untitled45.ipynb
+ Android/                                                                                       PrintHood@            Untitled23.ipynb   Untitled46.ipynb
+ AndroidStudioProjects/                                                                         Recent@               Untitled24.ipynb   Untitled47.ipynb
+ AppData/                                                                                      'Saved Games'/         Untitled25.ipynb   Untitled48.ipynb
+'Application Data'@                                                                             Searches/             Untitled26.ipynb   Untitled49.ipynb
+ Contacts/                                                                                      SendTo@               Untitled27.ipynb   Untitled5.ipynb
+ Cookies@                                                                                      'Start Menu'@          Untitled28.ipynb   Untitled6.ipynb
+ Desktop/                                                                                       Templates@            Untitled29.ipynb   Untitled7.ipynb
+ Documents/                                                                                    'Untitled Folder'/     Untitled3.ipynb    Untitled8.ipynb
+ Downloads/                                                                                    'Untitled Folder 1'/   Untitled30.ipynb   Untitled9.ipynb
+ ES2.csv                                                                                        Untitled.ipynb        Untitled31.ipynb   Videos/
+ Favorites/                                                                                     Untitled1.ipynb       Untitled32.ipynb   anaconda3/
+ IntelGraphicsProfiles/                                                                         Untitled10.ipynb      Untitled33.ipynb   enjoysport.csv
+ Java/                                                                                          Untitled11.ipynb      Untitled34.ipynb   esport.csv.xlsx
+ Links/                                                                                         Untitled12.ipynb      Untitled35.ipynb   fact.rb
+'Local Settings'@                                                                               Untitled13.ipynb      Untitled36.ipynb   j2mewtk/
+ Music/                                                                                         Untitled14.ipynb      Untitled37.ipynb   naaa.ipynb
+'My Documents'@                                                                                 Untitled15.ipynb      Untitled38.ipynb   naaaaaa.ipynb
+ NTUSER.DAT                                                                                     Untitled16.ipynb      Untitled39.ipynb   ntuser.dat.LOG1
+ NTUSER.DAT{c908691e-fdea-11ed-a568-bce92fa15cc1}.TM.blf                                        Untitled17.ipynb      Untitled4.ipynb    ntuser.dat.LOG2
+ NTUSER.DAT{c908691e-fdea-11ed-a568-bce92fa15cc1}.TMContainer00000000000000000001.regtrans-ms   Untitled18.ipynb      Untitled40.ipynb   ntuser.ini
+ NTUSER.DAT{c908691e-fdea-11ed-a568-bce92fa15cc1}.TMContainer00000000000000000002.regtrans-ms   Untitled19.ipynb      Untitled41.ipynb   test1/
+ NetHood@                                                                                       Untitled2.ipynb       Untitled42.ipynb   test2/
+'New Text Document.txt'                                                                         Untitled20.ipynb      Untitled43.ipynb   untitled.txt
+ OneDrive/                                                                                      Untitled21.ipynb      Untitled44.ipynb   weka.log
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~
+$ cd test1
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ ls
+demo.txt
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ vim demo.txt
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git add demo.txt
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   demo.txt
+
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git commit -m"fisrt commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ADMIN@DESKTOP-8P9U037.(none)')
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git commit -m "fisrt commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ADMIN@DESKTOP-8P9U037.(none)')
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git config --global user.email "sairamadevikota2@gmail.com"
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git commit -m "fisrt commit"
+[main 56cb9eb] fisrt commit
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git remote -v
+origin  https://github.com/ramakota2309/test1.git (fetch)
+origin  https://github.com/ramakota2309/test1.git (push)
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ramakota2309/test1.git'
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ramakota2309/test1.git
+   101ca6b..56cb9eb  main -> main
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ vim sample.txt
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git add sample.txt
+warning: in the working copy of 'sample.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git commit -m "second commit"
+[main 85903fa] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git remote -v
+origin  https://github.com/ramakota2309/test1.git (fetch)
+origin  https://github.com/ramakota2309/test1.git (push)
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ramakota2309/test1.git'
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ramakota2309/test1.git
+   56cb9eb..85903fa  main -> main
+
+ADMIN@DESKTOP-8P9U037 MINGW64 ~/test1 (main)
